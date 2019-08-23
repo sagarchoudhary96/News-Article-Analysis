@@ -2,6 +2,6 @@
 const apiUtils = require("../utils/api")
 
 // Home Page
-exports.getHomePage = (req, res) => {
+exports.getTestPage = (req, res) => {
     return res.send("Hello World!")
 }

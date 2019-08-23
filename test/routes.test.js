@@ -5,9 +5,9 @@ const request = require("supertest");
 const app = require("../app")
 
 // home page route test
-describe("test homePage Route: '/'", () => {
+describe("test Route: '/analyse'", () => {
     test("Should return Hello Word!", async () => {
-        const response = await request(app).get("/")
+        const response = await request(app).get("/analyse")
         expect(response.text).toEqual("Hello World!")
         expect(response.statusCode).toEqual(200)
     })

@@ -5,7 +5,6 @@ const apiUtils = require("../app/utils/api")
 describe("testing Api", () => {
     test("Should return successful response", () => {
         return apiUtils.analyseText("Hello World!").then((res) => {
-            console.log(res);
             expect(res.text).toEqual("Hello World!")
             expect(res.polarity).toEqual("neutral")
             expect(res.subjectivity).toEqual("subjective")
