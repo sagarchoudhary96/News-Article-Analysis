@@ -15,6 +15,9 @@ app.use(bodyParser.json())
 const cors = require("cors")
 app.use(cors())
 
+// serve html from dist diirectory
+app.use(express.static('dist'));
+
 // Import Required routes
 require('./routes')(app)
 
