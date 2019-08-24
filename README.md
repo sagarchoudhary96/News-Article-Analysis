@@ -21,4 +21,8 @@
 
 ## Running Devserver
 
-* DevServer can be run directly using `npm start:dev` or `yarn start:dev` 
+* DevServer can be run directly using `npm start:dev` or `yarn start:dev` .
+
+## Running Tests
+
+* Test suites can be run using `npm test` or `yarn test`
