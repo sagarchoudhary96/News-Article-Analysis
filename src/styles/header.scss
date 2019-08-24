@@ -1,0 +1,38 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1071;
+  min-height: 3rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 40px;
+  color: white;
+  font-family: cursive;
+  letter-spacing: 0.3rem;
+}
+
+.menu {
+  float: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: auto 1vw;
+  cursor: none;
+}
+
+.menu-item {
+  a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+  }
+}

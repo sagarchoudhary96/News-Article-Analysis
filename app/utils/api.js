@@ -7,14 +7,14 @@ const textApi = new aylien({
     application_key: "YOUR_APP_KEY"
 })
 
-// Analyse text using aylien apii
-exports.analyseText = (text) => {
+// Analyse text using aylien api
+exports.analyseText = (data) => {
     return new Promise((resolve, reject) => {
-        textApi.sentiment({"text": text}, (err, response) => {
+        textApi.sentiment(data, (err, response) => {
             if(err === null) {
                 resolve(response)
             } else {
-                reject($err)
+                reject(err)
             }
         })
     })

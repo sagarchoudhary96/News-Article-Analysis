@@ -5,5 +5,6 @@ const baseRoute = '/analyse'
 const analyser = require('../controllers/analyser_controller')
 
 module.exports = (app) => {
-    app.get(baseRoute, analyser.getTestPage)
+    app.get(baseRoute + '/test', analyser.getTestPage)
+    app.post(baseRoute, analyser.getResult)
 }

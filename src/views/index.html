@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <header class="navbar blue-color">
+    <span class="logo">AIYSER</span>
+    <ul class="menu">
+      <li class="menu-item"><a href="#">Github</a></li>
+    </ul>
+  </header>
+  <main class="container">
+    <h2>News Article Analyser</h2>
+    <section class="form-section">
+      <form id="theForm" class="linkForm" autocomplete="off" onsubmit="Client.handleSubmit(event)" method="post">
+        <label for="text-input" class="secondary-text">Type in a statement or URL of an article to be analysed</label></span>
+        <input id="text-input" name="text-input" type="text" />
+        <input type="submit" value="Submit" class="btn">
+      </form>
+    </section>
+    <h3 id="error-field" class="error-text"></h3>
+    <div class="loader" id="loader"></div>
+    <section id="result-section" class="hidden">
+      <h2>Results:</h2>
+      <h3 class="secondary-text" id="polarity">
+        Polarity:
+        <span></span>
+      </h3>
+      <h3 class="secondary-text" id="polarity_confidence">
+        Polarity Confidence:
+        <span></span>
+      </h3>
+      <h3 class="secondary-text" id="subjectivity">
+        Subjectivity:
+        <span></span>
+      </h3>
+      <h3 class="secondary-text" id="subjectivity_confidence">
+        Subjectivity Confidence:
+        <span></span>
+      </h3>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <h3> Made with ❤️ by
+      <a href="http://github.com/sagarchoudhary96" class="black-text" target="_blank">Sâgâr Çhôùdhârý</a>
+    </h3>
+    <span class="footer-item"> © 2019 Copyright</span>
+  </footer>
+</body>
+
+</html>

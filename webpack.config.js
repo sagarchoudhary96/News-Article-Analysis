@@ -6,7 +6,9 @@ module.exports = {
     entry: "./src/index.js",
     output: {
         path: path.join(__dirname, 'dist'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        libraryTarget: 'var',
+        library: 'Client'
     },
     mode: "development",
     module: {
@@ -26,7 +28,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebPackPlugin({
-            template: "./src/index.html",
+            template: "./src/views/index.html",
             filename: "./index.html"
         })
     ]
