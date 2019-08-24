@@ -31,5 +31,12 @@ module.exports = {
             template: "./src/views/index.html",
             filename: "./index.html"
         })
-    ]
+    ],
+    devServer: {
+        proxy: {
+            '^/analyse/*': {
+              target: 'http://localhost:3000/analyse/',
+            }
+        }
+    }
 }
