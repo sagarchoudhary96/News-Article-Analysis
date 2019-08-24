@@ -32,8 +32,6 @@ module.exports = {
         new HtmlWebPackPlugin({
             template: "./src/views/index.html",
             filename: "./index.html"
-        }),
-        new MinifyPlugin(),
-        new GenerateSW()
+        })
     ]
 }
