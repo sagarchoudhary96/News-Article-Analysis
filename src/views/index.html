@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Aiyser</title>
 </head>
 
 <body>
@@ -51,6 +51,15 @@
     </h3>
     <span class="footer-item"> © 2019 Copyright</span>
   </footer>
-</body>
 
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+      })
+    }
+  </script>
+</body>
 </html>

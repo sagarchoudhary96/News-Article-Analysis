@@ -39,7 +39,7 @@ const handleSubmit = (event) => {
 
 // check if text is a url or not
 const isUrl = (text) => {
-  const regex = /^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/;
+  const regex = /^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/
   return regex.test(text)
 }
 

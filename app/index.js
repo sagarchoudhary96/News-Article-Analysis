@@ -16,9 +16,9 @@ const cors = require("cors")
 app.use(cors())
 
 // serve html from dist diirectory
-app.use(express.static('dist'));
+app.use(express.static('dist'))
 
 // Import Required routes
 require('./routes')(app)
 
-module.exports = app;
+module.exports = app
