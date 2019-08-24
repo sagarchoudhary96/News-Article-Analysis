@@ -1,8 +1,6 @@
 const path = require("path")
 const webpack = require('webpack')
 const HtmlWebPackPlugin = require("html-webpack-plugin")
-const {GenerateSW} = require('workbox-webpack-plugin')
-const MinifyPlugin = require("babel-minify-webpack-plugin")
 
 module.exports = {
     entry: "./src/index.js",
